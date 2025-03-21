@@ -1,3 +1,5 @@
+package NumberSystem;
+
 public class NumberOfFactors {
     static int countFactors(int N) {
         double sqrt=(double) (Math.sqrt(N));
