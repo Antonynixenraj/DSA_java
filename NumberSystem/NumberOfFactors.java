@@ -2,10 +2,9 @@ package NumberSystem;
 
 public class NumberOfFactors {
     static int countFactors(int N) {
-        double sqrt=(double) (Math.sqrt(N));
-        int num=(int) (Math.round(sqrt));
+
         int count=0;
-        for(int i=1;i<=num;i++){
+        for(int i=1;i*i<=N;i++){
             if(i*i==N)
                 count++;
             else if(N%i==0)
